@@ -16,7 +16,6 @@ dask
 pyspark
 nltk
 spacy
-transformers
 openpyxl
 pyarrow
 geopandas
