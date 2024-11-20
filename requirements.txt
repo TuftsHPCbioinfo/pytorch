@@ -21,8 +21,6 @@ openpyxl
 pyarrow
 geopandas
 shapely
-statsmodels
-jupyterlab
 ipywidgets
 black
 pytest
