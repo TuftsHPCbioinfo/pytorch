@@ -25,3 +25,4 @@ black
 pytest
 ipython
 ipykernel
+wandb
