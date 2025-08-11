@@ -23,7 +23,7 @@ jobs:
         with:
           images: |
             tuftsttsrt/pytorch
-          tags: 2.7.1-cuda11.8-cudnn9-runtime-jupyter
+          tags: 2.8.0-cuda12.9-cudnn9
       - name: Build & Publish Docker Image
         uses: docker/build-push-action@v5
         with:
