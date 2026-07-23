@@ -1,6 +1,11 @@
-# Use the specified base image
 FROM pytorch/pytorch:2.13.0-cuda12.6-cudnn9-runtime
-
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install ipython ipykernel ipywidgets
+ENV PIP_BREAK_SYSTEM_PACKAGES=1
+COPY requirements.txt /tmp/requirements.txt
+RUN python -m pip install \
+        --no-cache-dir \
+        -r /tmp/requirements.txt && \
+    python -m pip install \
+        --no-cache-dir \
+        ipython \
+        ipykernel \
+        ipywidgets
