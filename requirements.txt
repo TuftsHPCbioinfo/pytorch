@@ -1,3 +1,4 @@
+datasets
 numpy
 pandas
 scipy
@@ -7,3 +8,4 @@ scikit-learn
 pillow
 tqdm
 kaggle
+huggingface_hub
